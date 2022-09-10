@@ -7,9 +7,13 @@
     <title>Detailed view</title>
   </head>
   <body>
+    {% extends 'base/index.html' %} 
+    {% block content %} 
     <h1>Task:{{task}}</h1>
     <h2>{{task}}</h2>
 
     <a href="{% url 'tasks'%} ">Back</a>
+    {% endblock content %}
+
   </body>
 </html>
